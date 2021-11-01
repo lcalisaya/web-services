@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServices.RESTAPI.Tests",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServices.Data", "WebServices.Data\WebServices.Data.csproj", "{A3E47DB0-7B04-4FAC-AF0D-DBBF31FD2ADB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServices.ASMX", "WebServices.ASMX\WebServices.ASMX.csproj", "{C9E81CE7-2CC1-4FAD-89E4-AC0FCC16F4A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A3E47DB0-7B04-4FAC-AF0D-DBBF31FD2ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3E47DB0-7B04-4FAC-AF0D-DBBF31FD2ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3E47DB0-7B04-4FAC-AF0D-DBBF31FD2ADB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9E81CE7-2CC1-4FAD-89E4-AC0FCC16F4A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9E81CE7-2CC1-4FAD-89E4-AC0FCC16F4A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9E81CE7-2CC1-4FAD-89E4-AC0FCC16F4A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9E81CE7-2CC1-4FAD-89E4-AC0FCC16F4A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,7 +5,6 @@ C:\Users\timea\source\repos\WebServices\WebServices.Data\bin\Debug\EntityFramewo
 C:\Users\timea\source\repos\WebServices\WebServices.Data\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\timea\source\repos\WebServices\WebServices.Data\bin\Debug\EntityFramework.xml
 C:\Users\timea\source\repos\WebServices\WebServices.Data\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\timea\source\repos\WebServices\WebServices.Data\obj\Debug\WebServices.Data.csproj.AssemblyReference.cache
 C:\Users\timea\source\repos\WebServices\WebServices.Data\obj\Debug\WebServices.Data.csproj.CoreCompileInputs.cache
 C:\Users\timea\source\repos\WebServices\WebServices.Data\obj\Debug\WebServices.Data.csproj.CopyComplete
 C:\Users\timea\source\repos\WebServices\WebServices.Data\obj\Debug\WebServices.Data.dll
