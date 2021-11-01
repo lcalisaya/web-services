@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServices.RESTAPI", "WebServices.RESTAPI\WebServices.RESTAPI.csproj", "{7FC66B65-D2E2-4CD9-A195-9A0401F6B36D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServices.RESTAPI.Tests", "WebServices.RESTAPI.Tests\WebServices.RESTAPI.Tests.csproj", "{ACAB3594-8742-461B-B81F-EA154642993D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FC66B65-D2E2-4CD9-A195-9A0401F6B36D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC66B65-D2E2-4CD9-A195-9A0401F6B36D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC66B65-D2E2-4CD9-A195-9A0401F6B36D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC66B65-D2E2-4CD9-A195-9A0401F6B36D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACAB3594-8742-461B-B81F-EA154642993D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACAB3594-8742-461B-B81F-EA154642993D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACAB3594-8742-461B-B81F-EA154642993D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACAB3594-8742-461B-B81F-EA154642993D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A81F8C7-9BE5-4A2F-8CFC-5FC26FD11C05}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+C:\Users\timea\source\repos\WebServices\ClassLibrary.Data\bin\Debug\netstandard2.1\ClassLibrary.Data.deps.json
+C:\Users\timea\source\repos\WebServices\ClassLibrary.Data\bin\Debug\netstandard2.1\ClassLibrary.Data.dll
+C:\Users\timea\source\repos\WebServices\ClassLibrary.Data\bin\Debug\netstandard2.1\ClassLibrary.Data.pdb
+C:\Users\timea\source\repos\WebServices\ClassLibrary.Data\obj\Debug\netstandard2.1\ClassLibrary.Data.csproj.AssemblyReference.cache
+C:\Users\timea\source\repos\WebServices\ClassLibrary.Data\obj\Debug\netstandard2.1\ClassLibrary.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\timea\source\repos\WebServices\ClassLibrary.Data\obj\Debug\netstandard2.1\ClassLibrary.Data.AssemblyInfoInputs.cache
+C:\Users\timea\source\repos\WebServices\ClassLibrary.Data\obj\Debug\netstandard2.1\ClassLibrary.Data.AssemblyInfo.cs
+C:\Users\timea\source\repos\WebServices\ClassLibrary.Data\obj\Debug\netstandard2.1\ClassLibrary.Data.csproj.CoreCompileInputs.cache
+C:\Users\timea\source\repos\WebServices\ClassLibrary.Data\obj\Debug\netstandard2.1\ClassLibrary.Data.dll
+C:\Users\timea\source\repos\WebServices\ClassLibrary.Data\obj\Debug\netstandard2.1\ClassLibrary.Data.pdb
