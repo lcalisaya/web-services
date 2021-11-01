@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServices.RESTAPI", "WebS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServices.RESTAPI.Tests", "WebServices.RESTAPI.Tests\WebServices.RESTAPI.Tests.csproj", "{ACAB3594-8742-461B-B81F-EA154642993D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServices.Data", "WebServices.Data\WebServices.Data.csproj", "{A3E47DB0-7B04-4FAC-AF0D-DBBF31FD2ADB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{ACAB3594-8742-461B-B81F-EA154642993D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACAB3594-8742-461B-B81F-EA154642993D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACAB3594-8742-461B-B81F-EA154642993D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3E47DB0-7B04-4FAC-AF0D-DBBF31FD2ADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E47DB0-7B04-4FAC-AF0D-DBBF31FD2ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E47DB0-7B04-4FAC-AF0D-DBBF31FD2ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E47DB0-7B04-4FAC-AF0D-DBBF31FD2ADB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
