@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.ServiceModel.Web;
-using System.Text;
+using WebServices.Data.Model;
 
 namespace WebServices.WCF
 {
@@ -12,22 +10,59 @@ namespace WebServices.WCF
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
-        public string GetData(int value)
+        FootballPlayersConnection db = new FootballPlayersConnection();
+        public List<Player> GetPlayers()
         {
-            return string.Format("You entered: {0}", value);
+            return db.Player.ToList();
         }
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        public Player GetPlayer(int id)
         {
-            if (composite == null)
+            return db.Player.FirstOrDefault(x => x.Id == id);
+        }
+
+        public Player AddPlayer(string fname, string lname, DateTime birth, string origin, string genre, string clubnow)
+        {
+            Player newPlayer = new Player()
             {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
+                FirstName = fname,
+                LastName = lname,
+                BirthDate = birth,
+                Nationality = origin,
+                Genre = genre,
+                ActualClub = clubnow
+            };
+
+            Player player = db.Player.Add(newPlayer);
+            db.SaveChanges();
+            return player;
+        }
+
+        public Player UpdatePlayer(int id, string fname, string lname, DateTime birth, string origin, string genre, string clubnow)
+        {
+            Player playerInDB = GetPlayer(id);
+            playerInDB.FirstName = fname;
+            playerInDB.LastName = lname;
+            playerInDB.Genre = genre;
+            playerInDB.ActualClub = clubnow;
+            playerInDB.BirthDate = birth;
+            playerInDB.Nationality = origin;
+
+            db.Entry(playerInDB).State = EntityState.Modified;
+
+            db.SaveChanges();
+            return playerInDB;
+        }
+        public List<Player> DeletePlayer(int id)
+        {
+            var player = db.Player.FirstOrDefault(x => x.Id == id);
+            if (player != null)
             {
-                composite.StringValue += "Suffix";
+                db.Player.Remove(player);
+                db.SaveChanges();
             }
-            return composite;
+
+            return GetPlayers();
         }
     }
 }

@@ -1,6 +1,13 @@
 C:\Users\timea\source\repos\WebServices\WebServices.WCF\bin\WebServices.WCF.dll.config
 C:\Users\timea\source\repos\WebServices\WebServices.WCF\bin\WebServices.WCF.dll
 C:\Users\timea\source\repos\WebServices\WebServices.WCF\bin\WebServices.WCF.pdb
+C:\Users\timea\source\repos\WebServices\WebServices.WCF\bin\EntityFramework.dll
+C:\Users\timea\source\repos\WebServices\WebServices.WCF\bin\EntityFramework.SqlServer.dll
+C:\Users\timea\source\repos\WebServices\WebServices.WCF\bin\WebServices.Data.dll
+C:\Users\timea\source\repos\WebServices\WebServices.WCF\bin\WebServices.Data.pdb
+C:\Users\timea\source\repos\WebServices\WebServices.WCF\bin\WebServices.Data.dll.config
+C:\Users\timea\source\repos\WebServices\WebServices.WCF\bin\EntityFramework.xml
+C:\Users\timea\source\repos\WebServices\WebServices.WCF\bin\EntityFramework.SqlServer.xml
 C:\Users\timea\source\repos\WebServices\WebServices.WCF\obj\Debug\WebServices.WCF.csproj.AssemblyReference.cache
 C:\Users\timea\source\repos\WebServices\WebServices.WCF\obj\Debug\WebServices.WCF.csproj.CoreCompileInputs.cache
 C:\Users\timea\source\repos\WebServices\WebServices.WCF\obj\Debug\WebServices.WCF.dll
