@@ -19,6 +19,10 @@ C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\Syst
 C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\System.Web.WebPages.Razor.dll
 C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\WebServices.RESTAPI.dll
 C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\WebServices.Data.dll
+C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\EntityFramework.dll
+C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\WebGrease.dll
+C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\Antlr3.Runtime.dll
 C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\WebServices.RESTAPI.pdb
 C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\WebServices.RESTAPI.dll.config
 C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
@@ -34,6 +38,10 @@ C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\Syst
 C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\System.Web.Optimization.xml
+C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\WebServices.Data.pdb
+C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\WebServices.Data.dll.config
+C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\EntityFramework.xml
+C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\bin\Debug\Antlr3.Runtime.pdb
 C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\obj\Debug\WebServices.RESTAPI.Tests.csproj.AssemblyReference.cache
 C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\obj\Debug\WebServices.RESTAPI.Tests.csproj.CoreCompileInputs.cache
 C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI.Tests\obj\Debug\WebServices.RESTAPI.Tests.csproj.CopyComplete
