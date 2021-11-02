@@ -1,0 +1,7 @@
+C:\Users\timea\source\repos\WebServices\WebServices.ConsoleClient\bin\Debug\WebServices.ConsoleClient.exe.config
+C:\Users\timea\source\repos\WebServices\WebServices.ConsoleClient\bin\Debug\WebServices.ConsoleClient.exe
+C:\Users\timea\source\repos\WebServices\WebServices.ConsoleClient\bin\Debug\WebServices.ConsoleClient.pdb
+C:\Users\timea\source\repos\WebServices\WebServices.ConsoleClient\obj\Debug\WebServices.ConsoleClient.csproj.AssemblyReference.cache
+C:\Users\timea\source\repos\WebServices\WebServices.ConsoleClient\obj\Debug\WebServices.ConsoleClient.csproj.CoreCompileInputs.cache
+C:\Users\timea\source\repos\WebServices\WebServices.ConsoleClient\obj\Debug\WebServices.ConsoleClient.exe
+C:\Users\timea\source\repos\WebServices\WebServices.ConsoleClient\obj\Debug\WebServices.ConsoleClient.pdb

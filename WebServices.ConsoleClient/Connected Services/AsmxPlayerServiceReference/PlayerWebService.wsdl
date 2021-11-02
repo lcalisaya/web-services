@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetPlayers">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPlayersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPlayersResult" type="tns:ArrayOfPlayer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPlayer">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Player" nillable="true" type="tns:Player" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Player">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BirthDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nationality" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActualClub" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Genre" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetPlayer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPlayerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPlayerResult" type="tns:Player" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddPlayer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lname" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="birth" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="origin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="genre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clubnow" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddPlayerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddPlayerResult" type="tns:Player" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePlayer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="fname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lname" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="birth" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="origin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="genre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clubnow" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePlayerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdatePlayerResult" type="tns:Player" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePlayer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePlayerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeletePlayerResult" type="tns:ArrayOfPlayer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetPlayersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPlayers" />
+  </wsdl:message>
+  <wsdl:message name="GetPlayersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPlayersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPlayerSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPlayer" />
+  </wsdl:message>
+  <wsdl:message name="GetPlayerSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPlayerResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddPlayerSoapIn">
+    <wsdl:part name="parameters" element="tns:AddPlayer" />
+  </wsdl:message>
+  <wsdl:message name="AddPlayerSoapOut">
+    <wsdl:part name="parameters" element="tns:AddPlayerResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePlayerSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePlayer" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePlayerSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePlayerResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeletePlayerSoapIn">
+    <wsdl:part name="parameters" element="tns:DeletePlayer" />
+  </wsdl:message>
+  <wsdl:message name="DeletePlayerSoapOut">
+    <wsdl:part name="parameters" element="tns:DeletePlayerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PlayerWebServiceSoap">
+    <wsdl:operation name="GetPlayers">
+      <wsdl:input message="tns:GetPlayersSoapIn" />
+      <wsdl:output message="tns:GetPlayersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlayer">
+      <wsdl:input message="tns:GetPlayerSoapIn" />
+      <wsdl:output message="tns:GetPlayerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPlayer">
+      <wsdl:input message="tns:AddPlayerSoapIn" />
+      <wsdl:output message="tns:AddPlayerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePlayer">
+      <wsdl:input message="tns:UpdatePlayerSoapIn" />
+      <wsdl:output message="tns:UpdatePlayerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePlayer">
+      <wsdl:input message="tns:DeletePlayerSoapIn" />
+      <wsdl:output message="tns:DeletePlayerSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PlayerWebServiceSoap" type="tns:PlayerWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPlayers">
+      <soap:operation soapAction="http://tempuri.org/GetPlayers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlayer">
+      <soap:operation soapAction="http://tempuri.org/GetPlayer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPlayer">
+      <soap:operation soapAction="http://tempuri.org/AddPlayer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePlayer">
+      <soap:operation soapAction="http://tempuri.org/UpdatePlayer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePlayer">
+      <soap:operation soapAction="http://tempuri.org/DeletePlayer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PlayerWebServiceSoap12" type="tns:PlayerWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPlayers">
+      <soap12:operation soapAction="http://tempuri.org/GetPlayers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlayer">
+      <soap12:operation soapAction="http://tempuri.org/GetPlayer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPlayer">
+      <soap12:operation soapAction="http://tempuri.org/AddPlayer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePlayer">
+      <soap12:operation soapAction="http://tempuri.org/UpdatePlayer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePlayer">
+      <soap12:operation soapAction="http://tempuri.org/DeletePlayer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PlayerWebService">
+    <wsdl:port name="PlayerWebServiceSoap" binding="tns:PlayerWebServiceSoap">
+      <soap:address location="https://localhost:44312/PlayerWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PlayerWebServiceSoap12" binding="tns:PlayerWebServiceSoap12">
+      <soap12:address location="https://localhost:44312/PlayerWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

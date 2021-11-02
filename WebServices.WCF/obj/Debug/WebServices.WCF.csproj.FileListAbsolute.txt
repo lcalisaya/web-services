@@ -12,3 +12,4 @@ C:\Users\timea\source\repos\WebServices\WebServices.WCF\obj\Debug\WebServices.WC
 C:\Users\timea\source\repos\WebServices\WebServices.WCF\obj\Debug\WebServices.WCF.csproj.CoreCompileInputs.cache
 C:\Users\timea\source\repos\WebServices\WebServices.WCF\obj\Debug\WebServices.WCF.dll
 C:\Users\timea\source\repos\WebServices\WebServices.WCF\obj\Debug\WebServices.WCF.pdb
+C:\Users\timea\source\repos\WebServices\WebServices.WCF\obj\Debug\WebServices.WCF.csproj.CopyComplete
