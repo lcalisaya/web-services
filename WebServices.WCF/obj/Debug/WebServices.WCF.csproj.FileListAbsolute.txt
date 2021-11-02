@@ -10,6 +10,6 @@ C:\Users\timea\source\repos\WebServices\WebServices.WCF\bin\EntityFramework.xml
 C:\Users\timea\source\repos\WebServices\WebServices.WCF\bin\EntityFramework.SqlServer.xml
 C:\Users\timea\source\repos\WebServices\WebServices.WCF\obj\Debug\WebServices.WCF.csproj.AssemblyReference.cache
 C:\Users\timea\source\repos\WebServices\WebServices.WCF\obj\Debug\WebServices.WCF.csproj.CoreCompileInputs.cache
+C:\Users\timea\source\repos\WebServices\WebServices.WCF\obj\Debug\WebServices.WCF.csproj.CopyComplete
 C:\Users\timea\source\repos\WebServices\WebServices.WCF\obj\Debug\WebServices.WCF.dll
 C:\Users\timea\source\repos\WebServices\WebServices.WCF\obj\Debug\WebServices.WCF.pdb
-C:\Users\timea\source\repos\WebServices\WebServices.WCF\obj\Debug\WebServices.WCF.csproj.CopyComplete
