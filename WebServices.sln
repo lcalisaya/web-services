@@ -15,6 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServices.WCF", "WebServi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServices.ConsoleClient", "WebServices.ConsoleClient\WebServices.ConsoleClient.csproj", "{71AC78D9-4C7C-40A8-B944-DB8991363B80}"
 	ProjectSection(ProjectDependencies) = postProject
+		{2FBB7082-FB26-47A9-AECF-48ABC0C4C494} = {2FBB7082-FB26-47A9-AECF-48ABC0C4C494}
 		{C9E81CE7-2CC1-4FAD-89E4-AC0FCC16F4A0} = {C9E81CE7-2CC1-4FAD-89E4-AC0FCC16F4A0}
 	EndProjectSection
 EndProject
