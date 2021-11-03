@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Web;
 using System.Web.Mvc;
 using WebServices.Domain;
+using System.Net.Http.Formatting;
 
 namespace WebServices.WebClient.Controllers
 {
@@ -28,7 +29,7 @@ namespace WebServices.WebClient.Controllers
                 return View(playersList);
             }
 
-            return View(new List<Domain.Player>());
+            return View(new List<Player>());
         }
 
         // GET: Player/Details/5
@@ -40,7 +41,7 @@ namespace WebServices.WebClient.Controllers
         // GET: Player/Create
         public ActionResult Create()
         {
-            return View();
+            return View(new Player());
         }
 
         // POST: Player/Create
@@ -49,9 +50,33 @@ namespace WebServices.WebClient.Controllers
         {
             try
             {
-                // TODO: Add insert logic here
+                //Insert logic here
+                HttpClient clientHttp = new HttpClient();
+                clientHttp.BaseAddress = new Uri("https://localhost:44376/");
 
-                return RedirectToAction("Index");
+                Player myNewPlayer = new Player()
+                {
+                    FirstName = collection["FirstName"],
+                    LastName = collection["LastName"],
+                    BirthDate = DateTime.Parse(collection["BirthDate"]),
+                    Nationality = collection["Nationality"],
+                    ActualClub = collection["ActualClub"],
+                    Genre = collection["Genre"]
+                };
+
+                var request = clientHttp.PostAsync("api/player", myNewPlayer, new JsonMediaTypeFormatter()).Result;
+
+                if (request.IsSuccessStatusCode)
+                {
+                    var dataInRequest = request.Content.ReadAsStringAsync().Result;
+                    var isPlayerCreated = JsonConvert.DeserializeObject<bool>(dataInRequest);
+                    if (isPlayerCreated)
+                    {
+                        TempData["UserMessage"] = "New Player recorded successfully!";
+                        return RedirectToAction("Index");
+                    }
+                }
+                return View(myNewPlayer);
             }
             catch
             {

@@ -76,6 +76,8 @@ C:\Users\timea\source\repos\WebServices\WebServices.WebClient\bin\Antlr3.Runtime
 C:\Users\timea\source\repos\WebServices\WebServices.WebClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\timea\source\repos\WebServices\WebServices.WebClient\obj\Debug\WebServices.WebClient.csproj.AssemblyReference.cache
 C:\Users\timea\source\repos\WebServices\WebServices.WebClient\obj\Debug\WebServices.WebClient.csproj.CoreCompileInputs.cache
-C:\Users\timea\source\repos\WebServices\WebServices.WebClient\obj\Debug\WebServices.WebClient.csproj.CopyComplete
 C:\Users\timea\source\repos\WebServices\WebServices.WebClient\obj\Debug\WebServices.WebClient.dll
 C:\Users\timea\source\repos\WebServices\WebServices.WebClient\obj\Debug\WebServices.WebClient.pdb
+C:\Users\timea\source\repos\WebServices\WebServices.WebClient\bin\System.Net.Http.Extensions.dll
+C:\Users\timea\source\repos\WebServices\WebServices.WebClient\bin\System.Net.Http.Formatting.dll
+C:\Users\timea\source\repos\WebServices\WebServices.WebClient\bin\System.Net.Http.Primitives.dll

@@ -26,11 +26,11 @@ namespace WebServices.RESTAPI.Controllers
         }
 
         // POST api/player
-        public OkResult Post([FromBody] Player sentPlayer)
+        public bool Post([FromBody] Player sentPlayer)
         {
             db.Player.Add(sentPlayer);
             db.SaveChanges();
-            return Ok();
+            return true;
         }
 
         // PUT api/player/5

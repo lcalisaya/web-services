@@ -6,6 +6,18 @@
 
 <h2>Index Of Players</h2>
 
+@*CHECK THIS*@
+@*@if (TempData["UserMessage"] != null)
+{
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Excellent!!</strong>
+    @TempData["UserMessage"].ToString()
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+}*@
+
 <p>
     @Html.ActionLink("New Player", "Create", null, new { @class = "btn btn-success" })
 </p>
@@ -32,32 +44,33 @@
         <th>Actions</th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.FirstName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LastName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BirthDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Nationality)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ActualClub)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Genre)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }, new { @class = "btn btn-info" }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }, new { @class = "btn btn-primary" }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { @class = "btn btn-danger" })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BirthDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nationality)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActualClub)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-info" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }, new { @class = "btn btn-primary" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
 
 </table>
