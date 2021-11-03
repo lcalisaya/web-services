@@ -1,0 +1,6 @@
+C:\Users\timea\source\repos\WebServices\WebServices.Domain\bin\Debug\WebServices.Domain.dll
+C:\Users\timea\source\repos\WebServices\WebServices.Domain\bin\Debug\WebServices.Domain.pdb
+C:\Users\timea\source\repos\WebServices\WebServices.Domain\obj\Debug\WebServices.Domain.csproj.AssemblyReference.cache
+C:\Users\timea\source\repos\WebServices\WebServices.Domain\obj\Debug\WebServices.Domain.csproj.CoreCompileInputs.cache
+C:\Users\timea\source\repos\WebServices\WebServices.Domain\obj\Debug\WebServices.Domain.dll
+C:\Users\timea\source\repos\WebServices\WebServices.Domain\obj\Debug\WebServices.Domain.pdb

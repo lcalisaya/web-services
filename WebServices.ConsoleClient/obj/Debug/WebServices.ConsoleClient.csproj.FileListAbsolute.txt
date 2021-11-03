@@ -6,8 +6,8 @@ C:\Users\timea\source\repos\WebServices\WebServices.ConsoleClient\bin\Debug\Enti
 C:\Users\timea\source\repos\WebServices\WebServices.ConsoleClient\bin\Debug\WebServices.Data.pdb
 C:\Users\timea\source\repos\WebServices\WebServices.ConsoleClient\bin\Debug\WebServices.Data.dll.config
 C:\Users\timea\source\repos\WebServices\WebServices.ConsoleClient\bin\Debug\EntityFramework.xml
-C:\Users\timea\source\repos\WebServices\WebServices.ConsoleClient\obj\Debug\WebServices.ConsoleClient.csproj.AssemblyReference.cache
 C:\Users\timea\source\repos\WebServices\WebServices.ConsoleClient\obj\Debug\WebServices.ConsoleClient.csproj.CoreCompileInputs.cache
 C:\Users\timea\source\repos\WebServices\WebServices.ConsoleClient\obj\Debug\WebServices.ConsoleClient.csproj.CopyComplete
 C:\Users\timea\source\repos\WebServices\WebServices.ConsoleClient\obj\Debug\WebServices.ConsoleClient.exe
 C:\Users\timea\source\repos\WebServices\WebServices.ConsoleClient\obj\Debug\WebServices.ConsoleClient.pdb
+C:\Users\timea\source\repos\WebServices\WebServices.ConsoleClient\obj\Debug\WebServices.ConsoleClient.csproj.AssemblyReference.cache
