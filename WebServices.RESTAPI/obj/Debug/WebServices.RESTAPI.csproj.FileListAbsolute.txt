@@ -89,4 +89,3 @@ C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI\obj\Debug\WebService
 C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI\obj\Debug\WebServices.RESTAPI.csproj.CoreCompileInputs.cache
 C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI\obj\Debug\WebServices.RESTAPI.dll
 C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI\obj\Debug\WebServices.RESTAPI.pdb
-C:\Users\timea\source\repos\WebServices\WebServices.RESTAPI\obj\Debug\WebServices.RESTAPI.csproj.CopyComplete

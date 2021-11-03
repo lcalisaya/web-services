@@ -1,19 +1,15 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Web;
+using System.Net.Http.Formatting;
 using System.Web.Mvc;
 using WebServices.Domain;
-using System.Net.Http.Formatting;
 
 namespace WebServices.WebClient.Controllers
 {
     public class PlayerController : Controller
     {
-       
-
         // GET: Player
         public ActionResult Index()
         {
@@ -35,7 +31,19 @@ namespace WebServices.WebClient.Controllers
         // GET: Player/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            HttpClient clientHttp = new HttpClient();
+            clientHttp.BaseAddress = new Uri("https://localhost:44376/");
+
+            var request = clientHttp.GetAsync($"api/player/{id}").Result;
+
+            if (request.IsSuccessStatusCode)
+            {
+                var dataInRequest = request.Content.ReadAsStringAsync().Result;
+                var selectedPlayer = JsonConvert.DeserializeObject<Player>(dataInRequest);
+                return View(selectedPlayer);
+            }
+
+            return View(new Player());;
         }
 
         // GET: Player/Create
@@ -97,7 +105,6 @@ namespace WebServices.WebClient.Controllers
             try
             {
                 // TODO: Add update logic here
-
                 return RedirectToAction("Index");
             }
             catch
