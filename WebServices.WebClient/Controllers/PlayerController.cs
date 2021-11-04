@@ -43,7 +43,7 @@ namespace WebServices.WebClient.Controllers
                 return View(selectedPlayer);
             }
 
-            return View(new Player());;
+            return View(new Player());
         }
 
         // GET: Player/Create
@@ -95,7 +95,18 @@ namespace WebServices.WebClient.Controllers
         // GET: Player/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            HttpClient clientHttp = new HttpClient();
+            clientHttp.BaseAddress = new Uri("https://localhost:44376/");
+
+            var request = clientHttp.GetAsync($"api/player/{id}").Result;
+
+            if (request.IsSuccessStatusCode)
+            {
+                var dataInRequest = request.Content.ReadAsStringAsync().Result;
+                var selectedPlayer = JsonConvert.DeserializeObject<Player>(dataInRequest);
+                return View(selectedPlayer);
+            }
+            return View(new Player());
         }
 
         // POST: Player/Edit/5
@@ -104,8 +115,34 @@ namespace WebServices.WebClient.Controllers
         {
             try
             {
-                // TODO: Add update logic here
-                return RedirectToAction("Index");
+                //Update logic here
+                HttpClient clientHttp = new HttpClient();
+                clientHttp.BaseAddress = new Uri("https://localhost:44376/");
+
+                Player updatedPlayer = new Player()
+                {
+                    Id = Int32.Parse(collection["Id"]),
+                    FirstName = collection["FirstName"],
+                    LastName = collection["LastName"],
+                    BirthDate = DateTime.Parse(collection["BirthDate"]),
+                    Nationality = collection["Nationality"],
+                    ActualClub = collection["ActualClub"],
+                    Genre = collection["Genre"]
+                };
+
+                var request = clientHttp.PutAsync($"api/player/{id}", updatedPlayer, new JsonMediaTypeFormatter()).Result;
+
+                if (request.IsSuccessStatusCode)
+                {
+                    var dataInRequest = request.Content.ReadAsStringAsync().Result;
+                    var isPlayerCreated = JsonConvert.DeserializeObject<bool>(dataInRequest);
+                    if (isPlayerCreated)
+                    {
+                        TempData["UserMessage"] = "Player updated successfully!";
+                        return RedirectToAction("Index");
+                    }
+                }
+                return View(updatedPlayer);
             }
             catch
             {

@@ -14,9 +14,10 @@ namespace WebServices.Domain
         [DisplayName("Last Name")]
         public string LastName { get; set; }
 
-        [DataType(DataType.Date), DisplayName("Date of birth"), DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MMMM yyyy}")]
+        [Display(Name = "Date of birth")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime? BirthDate { get; set; }
-
         public string Nationality { get; set; }
 
         [DisplayName("Plays in")]

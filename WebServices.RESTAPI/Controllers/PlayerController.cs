@@ -31,17 +31,17 @@ namespace WebServices.RESTAPI.Controllers
         }
 
         // PUT api/player/5
-        public IHttpActionResult Put(int id, [FromBody] Player sentPlayer)
+        public bool Put(int id, [FromBody] Player sentPlayer)
         {
             if (id != sentPlayer.Id)
             {
-                return BadRequest();
+                return false;
             }
 
             db.Entry(sentPlayer).State = EntityState.Modified;
 
             db.SaveChanges();
-            return Ok();
+            return true;
         }
 
         // DELETE api/player/5
