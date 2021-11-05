@@ -151,20 +151,32 @@ namespace WebServices.WebClient.Controllers
         }
 
         // GET: Player/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+        //public ActionResult Delete(int id)
+        //{
+        //    return View();
+        //}
 
         // POST: Player/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(int id)
         {
             try
             {
-                // TODO: Add delete logic here
+                //delete logic here
+                HttpClient clientHttp = new HttpClient();
+                clientHttp.BaseAddress = new Uri("https://localhost:44376/");
 
-                return RedirectToAction("Index");
+                var request = clientHttp.DeleteAsync($"api/player/{id}").Result;
+
+                if (request.IsSuccessStatusCode)
+                {
+                    if (request.Content.ReadAsStringAsync().Result == "true")
+                    {
+                        TempData["UserMessage"] = "Player updated successfully!";
+                        return RedirectToAction("Index");
+                    }
+                }
+                return View();
             }
             catch
             {

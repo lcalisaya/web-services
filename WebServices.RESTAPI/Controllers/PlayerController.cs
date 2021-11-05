@@ -45,18 +45,18 @@ namespace WebServices.RESTAPI.Controllers
         }
 
         // DELETE api/player/5
-        public IHttpActionResult Delete(int id)
+        public bool Delete(int id)
         {
             Player player = db.Player.Find(id);
             if (player == null)
             {
-                return NotFound();
+                return false;
             }
 
             db.Player.Remove(player);
             db.SaveChanges();
 
-            return Ok();
+            return true;
         }
     }
 }
